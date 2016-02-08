@@ -25,7 +25,7 @@
 ;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Custom-Themes.html
 ;; for a more technical explanation.
 
-when (display-graphic-p)
+(when (display-graphic-p)
   (load-theme 'monokai t)
   )
 (set-frame-font "DejaVu Sans Mono-10")
