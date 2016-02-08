@@ -63,8 +63,6 @@
     ;; git integration
     magit
 
-    ;; template
-    monokai-theme
     ))
 
 ;; On OS X, an Emacs instance started from the graphical user
