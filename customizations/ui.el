@@ -24,9 +24,13 @@
 ;; for a great explanation of emacs color themes.
 ;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Custom-Themes.html
 ;; for a more technical explanation.
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
-(add-to-list 'load-path "~/.emacs.d/themes")
-(load-theme 'tomorrow-night-bright t)
+
+when (display-graphic-p)
+  (load-theme 'monokai t)
+  )
+(set-frame-font "DejaVu Sans Mono-10")
+;;(setq initial-frame-alist '((top . 0) (left . 0) (width . 200) (height . 280)))
+
 
 ;; increase font size for better readability
 (set-face-attribute 'default nil :height 140)
