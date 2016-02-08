@@ -4,6 +4,11 @@
 ;; a matter of preference and may require some fiddling to match your
 ;; preferences
 
+(tool-bar-mode 0)
+(menu-bar-mode 0)
+;;(toggle-frame-fullscreen)
+(scroll-bar-mode 0)
+(fset `yes-or-no-p `y-or-n-p) 
 ;; Turn off the menu bar at the top of each frame because it's distracting
 (menu-bar-mode -1)
 
@@ -33,7 +38,7 @@
 
 
 ;; increase font size for better readability
-(set-face-attribute 'default nil :height 140)
+(set-face-attribute 'default nil :height 100)
 
 ;; Uncomment the lines below by removing semicolons and play with the
 ;; values in order to set the width (in characters wide) and height
